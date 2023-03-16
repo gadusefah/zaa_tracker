@@ -5,19 +5,20 @@ description = "Management Application"
 authors = ["Gilbert Adu-Sefah <gilbertadusefah@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.9"
+fastapi = "^0.94.1"
+uvicorn = {extras = ["standard"], version = "^0.21.1"}
 
-[tool.poetry.dev-dependencies]
-pytest = "^5.2"
-black = "^19.10b0"
-flake8 = "^3.8.3"
-isort = "^5.2.2"
-mypy = "^0.782"
-pre-commit = "^2.6.0"
-pytest-cov = "^2.10.0"
-rope = "^0.17.0"
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+pytest = "^7.2.2"
+isort = "^5.12.0"
+mypy = "^1.1.1"
+pre-commit = "^3.1.1"
+pytest-cov = "^4.0.0"
+tox = "^4.4.7"
+rope = "^1.7.0"
 seed-isort-config = "^2.2.0"
-tox = "^3.18.1"
 
 [tools.isort]
 multi_line_output = 4
